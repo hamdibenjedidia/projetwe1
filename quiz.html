@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz - Hamdi Benjedidia</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script defer src="assets/js/main.js"></script>
+  <script defer src="assets/js/quiz.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <div class="brand">
+        <span class="logo">HB</span>
+        <div>
+          <h1 class="site-title">Hamdi Benjedidia</h1>
+          <p class="site-subtitle">Quiz JavaScript</p>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="index.html">Accueil</a>
+        <a href="parcours.html">Parcours</a>
+        <a href="competences.html">Compétences</a>
+        <a href="experiences.html">Stages/Exp.</a>
+        <a href="matieres.html">Matières</a>
+        <a href="passions.html">Passions</a>
+        <a href="quiz.html" class="active">Quiz</a>
+        <a href="temoignage.html">Témoignage</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-title">
+      <h2>Quiz : bases du Web</h2>
+      <p class="muted">
+        10 questions. Après validation, vous aurez votre note et la liste des bonnes réponses.
+      </p>
+    </section>
+
+    <section class="card">
+      <form id="quizForm">
+        <div id="quizContainer"></div>
+
+        <div class="btn-row">
+          <button class="btn" type="submit">Valider</button>
+          <button class="btn btn-outline" type="button" id="resetBtn">Réinitialiser</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="card" id="resultBox" style="display:none;">
+      <h3>Résultat</h3>
+      <p id="scoreText"></p>
+      <div id="answersBox"></div>
+    </section>
+
+    <aside class="callout">
+      <h4>Pour le barème</h4>
+      <p class="muted">Ici : JavaScript + quiz (calcul de note + affichage des réponses).</p>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>© <span id="year"></span> Hamdi Benjedidia</p>
+      <p class="muted">Quiz</p>
+    </div>
+  </footer>
+</body>
+</html>
